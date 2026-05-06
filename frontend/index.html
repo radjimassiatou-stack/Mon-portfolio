@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio | RADJI Massiatou</title>
+    <meta name="description" content="Portfolio de RADJI Massiatou — étudiante en première année en système informatique et logiciel." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
+  <body>
+
+    <!-- TERMINAL INTRO OVERLAY -->
+    <div id="terminal-overlay">
+      <div class="terminal-window">
+        <div class="terminal-bar">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span class="terminal-title">massiatou@hacker:~$</span>
+        </div>
+        <div class="terminal-body" id="terminal-body"></div>
+      </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav id="navbar">
+      <div class="nav-brand">
+        <span class="nav-bracket">[</span>
+        <span class="nav-name">M.RADJI</span>
+        <span class="nav-bracket">]</span>
+      </div>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#hero" class="nav-link">~/accueil</a></li>
+        <li><a href="#about" class="nav-link">~/a-propos</a></li>
+        <li><a href="#skills" class="nav-link">~/competences</a></li>
+        <li><a href="#projects" class="nav-link">~/projets</a></li>
+        <li><a href="#education" class="nav-link">~/formation</a></li>
+        <li><a href="#passions" class="nav-link">~/passions</a></li>
+        <li><a href="#contact" class="nav-link">~/contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- PARTICLE CANVAS -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- HERO SECTION -->
+    <section id="hero" class="section">
+      <div class="hero-content">
+        <div class="glitch-container">
+          <div class="pre-text">&gt;&gt; DÉMARRAGE DU SYSTÈME TERMINÉ</div>
+          <h1 class="glitch" data-text="RADJI Massiatou">RADJI Massiatou</h1>
+        </div>
+        <div class="typing-container">
+          <span class="typing-prefix">$ qui_suis_je &gt;&nbsp;</span>
+          <span id="typing-text" class="typing-text"></span>
+          <span class="cursor-blink">|</span>
+        </div>
+        <p class="hero-sub">Étudiante en première année d’ingénierie systèmes et logiciels</p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">
+            <span class="btn-icon">&#9889;</span> Voir les projets
+          </a>
+          <a href="#contact" class="btn btn-outline">
+            <span class="btn-icon">&#128225;</span> Me contacter
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-num">8+</span>
+            <span class="stat-label">Compétences</span>
+          </div>
+          <div class="stat-divider">|</div>
+          <div class="stat">
+            <span class="stat-num">&#8734;</span>
+            <span class="stat-label">Passion</span>
+          </div>
+          <div class="stat-divider">|</div>
+          <div class="stat">
+            <span class="stat-num">1st</span>
+            <span class="stat-label">Année</span>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <span>défiler</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section reveal">
+      <div class="section-inner">
+        <div class="section-header">
+          <span class="section-tag">01.</span>
+          <h2 class="section-title">À propos</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="about-grid">
+          <div class="about-avatar">
+            <div class="avatar-frame">
+              <div class="avatar-hex">
+                <div class="avatar-inner">
+                  <img
+                    class="avatar-photo"
+                    src="/photo.jpeg"
+                    alt="Photo de RADJI Massiatou"
+                  />
+                  <div class="avatar-scan"></div>
+                </div>
+              </div>
+              <div class="avatar-status">
+                <span class="status-dot"></span> System Online
+              </div>
+            </div>
+          </div>
+          <div class="about-text">
+            <p class="about-para">
+              <span class="highlight">&gt;&nbsp;</span>
+              Bonjour ! Je suis <strong class="neon-text">RADJI Massiatou</strong>, une étudiante
+              ambitieuse en première année d’ingénierie systèmes et logiciels, passionnée par la
+              compréhension du fonctionnement des systèmes numériques.
+            </p>
+            <p class="about-para">
+              <span class="highlight">&gt;&nbsp;</span>
+              Je crois au pouvoir du code pour transformer les idées en réalité. Qu’il s’agisse
+              de créer des interfaces web propres ou d’explorer la logique système, j’aborde
+              chaque défi avec curiosité et discipline.
+            </p>
+            <p class="about-para">
+              <span class="highlight">&gt;&nbsp;</span>
+              En dehors du terminal, tu me trouveras sur le terrain de basket ou en train de
+              chanter, parce que la créativité nourrit tout ce que je fais.
+            </p>
+            <div class="info-grid">
+              <div class="info-item">
+                <span class="info-label">// Statut</span>
+                <span class="info-value neon-green">Disponible</span>
+              </div>
+              <div class="info-item">
+              <span class="info-label">// Filière</span>
+              <span class="info-value">Système informatique et logiciel</span>
+              </div>
+              <div class="info-item">
+                <span class="info-label">// Année</span>
+                <span class="info-value">1ère année</span>
+              </div>
+              <div class="info-item">
+                <span class="info-label">// Mode</span>
+                <span class="info-value neon-text">Apprentissage &amp; création</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="section reveal">
+      <div class="section-inner">
+        <div class="section-header">
+          <span class="section-tag">02.</span>
+          <h2 class="section-title">Compétences</h2>
+          <div class="section-line"></div>
+        </div>
+        <p class="section-sub">// Modules chargés &amp; capacités actives</p>
+        <div class="skills-grid">
+          <div class="skill-card reveal-child" data-level="85">
+            <div class="skill-icon-wrap"><span class="skill-icon">&#60;/&#62;</span></div>
+            <div class="skill-info">
+              <span class="skill-name">HTML</span>
+              <div class="skill-bar-wrap"><div class="skill-bar" style="--skill-w:85%"></div></div>
+              <span class="skill-percent">85%</span>
+            </div>
+          </div>
+          <div class="skill-card reveal-child" data-level="80">
+            <div class="skill-icon-wrap"><span class="skill-icon">&#127912;</span></div>
+            <div class="skill-info">
+              <span class="skill-name">CSS</span>
+              <div class="skill-bar-wrap"><div class="skill-bar" style="--skill-w:80%"></div></div>
+              <span class="skill-percent">80%</span>
+            </div>
+          </div>
+          <div class="skill-card reveal-child" data-level="75">
+            <div class="skill-icon-wrap"><span class="skill-icon">JS</span></div>
+            <div class="skill-info">
+              <span class="skill-name">JavaScript</span>
+              <div class="skill-bar-wrap"><div class="skill-bar" style="--skill-w:75%"></div></div>
+              <span class="skill-percent">75%</span>
+            </div>
+          </div>
+          <div class="skill-card reveal-child" data-level="70">
+            <div class="skill-icon-wrap"><span class="skill-icon">PY</span></div>
+            <div class="skill-info">
+              <span class="skill-name">Python</span>
+              <div class="skill-bar-wrap"><div class="skill-bar" style="--skill-w:70%"></div></div>
+              <span class="skill-percent">70%</span>
+            </div>
+          </div>
+          <div class="skill-card reveal-child" data-level="65">
+            <div class="skill-icon-wrap"><span class="skill-icon">DB</span></div>
+            <div class="skill-info">
+              <span class="skill-name">SQL</span>
+              <div class="skill-bar-wrap"><div class="skill-bar" style="--skill-w:65%"></div></div>
+              <span class="skill-percent">65%</span>
+            </div>
+          </div>
+          <div class="skill-card reveal-child" data-level="60">
+            <div class="skill-icon-wrap"><span class="skill-icon">C</span></div>
+            <div class="skill-info">
+              <span class="skill-name">C Language</span>
+              <div class="skill-bar-wrap"><div class="skill-bar" style="--skill-w:60%"></div></div>
+              <span class="skill-percent">60%</span>
+            </div>
+          </div>
+          <div class="skill-card reveal-child" data-level="78">
+            <div class="skill-icon-wrap"><span class="skill-icon">GH</span></div>
+            <div class="skill-info">
+              <span class="skill-name">GitHub</span>
+              <div class="skill-bar-wrap"><div class="skill-bar" style="--skill-w:78%"></div></div>
+              <span class="skill-percent">78%</span>
+            </div>
+          </div>
+          <div class="skill-card reveal-child" data-level="90">
+            <div class="skill-icon-wrap"><span class="skill-icon">VS</span></div>
+            <div class="skill-info">
+              <span class="skill-name">VS Code</span>
+              <div class="skill-bar-wrap"><div class="skill-bar" style="--skill-w:90%"></div></div>
+              <span class="skill-percent">90%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="section reveal">
+      <div class="section-inner">
+        <div class="section-header">
+          <span class="section-tag">03.</span>
+          <h2 class="section-title">Projets</h2>
+          <div class="section-line"></div>
+        </div>
+        <p class="section-sub">// Missions déployées &amp; projets en cours</p>
+        <div class="projects-grid">
+          <div class="project-card reveal-child">
+            <div class="project-top">
+              <div class="project-icons">
+                <span class="project-folder">&#128193;</span>
+                <div class="project-links">
+                  <a href="#" class="project-link" title="GitHub">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                  </a>
+                  <a href="#" class="project-link" title="Live Demo">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  </a>
+                </div>
+              </div>
+              <h3 class="project-title">Portfolio personnel</h3>
+              <p class="project-desc">Un site portfolio cyberpunk construit avec HTML, CSS et JavaScript, avec esthétique hacker, animations terminal et interactions fluides.</p>
+            </div>
+            <div class="project-tech">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">JavaScript</span>
+            </div>
+          </div>
+
+          <div class="project-card reveal-child">
+            <div class="project-top">
+              <div class="project-icons">
+                <span class="project-folder">&#128193;</span>
+                <div class="project-links">
+                  <a href="#" class="project-link" title="GitHub">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                  </a>
+                  <a href="#" class="project-link" title="Live Demo">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  </a>
+                </div>
+              </div>
+              <h3 class="project-title">Suivi des notes étudiant</h3>
+              <p class="project-desc">Une application Python pour gérer et analyser les notes avec une base de données SQL, offrant résumés, moyennes et statistiques.</p>
+            </div>
+            <div class="project-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">SQL</span>
+              <span class="tech-tag">SQLite</span>
+            </div>
+          </div>
+
+          <div class="project-card reveal-child">
+            <div class="project-top">
+              <div class="project-icons">
+                <span class="project-folder">&#128193;</span>
+                <div class="project-links">
+                  <a href="#" class="project-link" title="GitHub">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                  </a>
+                  <a href="#" class="project-link" title="Live Demo">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  </a>
+                </div>
+              </div>
+              <h3 class="project-title">Gestionnaire mémoire en C</h3>
+              <p class="project-desc">Un allocateur mémoire personnalisé implémentant malloc, free et realloc en C, pour illustrer la gestion mémoire système.</p>
+            </div>
+            <div class="project-tech">
+              <span class="tech-tag">C</span>
+              <span class="tech-tag">Systems</span>
+              <span class="tech-tag">Linux</span>
+            </div>
+          </div>
+
+          <div class="project-card reveal-child">
+            <div class="project-top">
+              <div class="project-icons">
+                <span class="project-folder">&#128193;</span>
+                <div class="project-links">
+                  <a href="#" class="project-link" title="GitHub">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                  </a>
+                  <a href="#" class="project-link" title="Live Demo">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  </a>
+                </div>
+              </div>
+              <h3 class="project-title">Application de quiz</h3>
+              <p class="project-desc">Une application de quiz interactive dans le navigateur avec questions dynamiques, score et classement — réalisée en JavaScript vanilla.</p>
+            </div>
+            <div class="project-tech">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">JavaScript</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION SECTION -->
+    <section id="education" class="section reveal">
+      <div class="section-inner">
+        <div class="section-header">
+          <span class="section-tag">04.</span>
+          <h2 class="section-title">Formation</h2>
+          <div class="section-line"></div>
+        </div>
+        <p class="section-sub">// Parcours académique</p>
+        <div class="edu-timeline">
+          <div class="edu-item reveal-child">
+            <div class="edu-dot"></div>
+            <div class="edu-card">
+              <div class="edu-year">2024 — Present</div>
+              <h3 class="edu-degree">Licence en système informatique et logiciel</h3>
+              <p class="edu-school">Université — Faculté d’ingénierie</p>
+              <p class="edu-desc">Actuellement en première année, je construis de solides bases en architecture informatique, algorithmes, structures de données, systèmes d’exploitation et développement logiciel.</p>
+              <div class="edu-tags">
+                <span class="edu-tag">Algorithms</span>
+                <span class="edu-tag">Data Structures</span>
+                <span class="edu-tag">OS Fundamentals</span>
+                <span class="edu-tag">Software Dev</span>
+              </div>
+            </div>
+          </div>
+          <div class="edu-item reveal-child">
+            <div class="edu-dot"></div>
+            <div class="edu-card">
+              <div class="edu-year">2023 — 2024</div>
+              <h3 class="edu-degree">Baccalauréat scientifique</h3>
+              <p class="edu-school">Lycée</p>
+              <p class="edu-desc">Diplômée avec distinction en mathématiques et sciences, ce qui a posé les bases analytiques de mon parcours en ingénierie.</p>
+              <div class="edu-tags">
+                <span class="edu-tag">Mathematics</span>
+                <span class="edu-tag">Physics</span>
+                <span class="edu-tag">Informatics</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PASSIONS SECTION -->
+    <section id="passions" class="section reveal">
+      <div class="section-inner">
+        <div class="section-header">
+          <span class="section-tag">05.</span>
+          <h2 class="section-title">Passions</h2>
+          <div class="section-line"></div>
+        </div>
+        <p class="section-sub">// Centres d’intérêt au-delà du terminal</p>
+        <div class="passions-grid">
+          <div class="passion-card reveal-child">
+            <div class="passion-glow"></div>
+            <div class="passion-icon">&#128187;</div>
+            <h3 class="passion-title">Technology</h3>
+            <p class="passion-desc">Passionnée par le fonctionnement des systèmes, du matériel au logiciel, des réseaux à l’IA. Je suis l’actualité tech et les projets open source chaque jour.</p>
+            <div class="passion-bar"><div class="passion-fill" style="--fill:95%"></div></div>
+          </div>
+          <div class="passion-card reveal-child">
+            <div class="passion-glow"></div>
+            <div class="passion-icon">&#127936;</div>
+            <h3 class="passion-title">Basketball</h3>
+            <p class="passion-desc">Le terrain m’apprend la discipline, l’esprit d’équipe et la recherche constante de progrès. Le basket renforce ma concentration et ma résilience.</p>
+            <div class="passion-bar"><div class="passion-fill" style="--fill:88%"></div></div>
+          </div>
+          <div class="passion-card reveal-child">
+            <div class="passion-glow"></div>
+            <div class="passion-icon">&#127925;</div>
+            <h3 class="passion-title">Singing</h3>
+            <p class="passion-desc">La musique est mon échappatoire créative. Le chant me permet d’exprimer mes émotions et d’équilibrer le monde logique du code.</p>
+            <div class="passion-bar"><div class="passion-fill" style="--fill:82%"></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section reveal">
+      <div class="section-inner">
+        <div class="section-header">
+          <span class="section-tag">06.</span>
+          <h2 class="section-title">Contact</h2>
+          <div class="section-line"></div>
+        </div>
+        <p class="section-sub">// Ouvrir une connexion</p>
+        <div class="contact-grid">
+          <div class="contact-info">
+            <p class="contact-tagline">Construisons quelque chose d’extraordinaire ensemble.</p>
+            <div class="contact-items">
+              <div class="contact-item">
+                <span class="contact-icon">&#128231;</span>
+                <span class="contact-label">E-mail</span>
+                <a href="mailto:radjimassiatou@gmail.com" class="contact-value">radjimassiatou@gmail.com</a>
+              </div>
+              <div class="contact-item">
+                <span class="contact-icon">&#128025;</span>
+                <span class="contact-label">GitHub</span>
+                <a href="#" class="contact-value">github.com/massiatou</a>
+              </div>
+            </div>
+          </div>
+          <form class="contact-form" id="contact-form">
+            <div class="form-group">
+              <label class="form-label" for="name">// Nom</label>
+              <input class="form-input" type="text" id="name" name="name" placeholder="your_name" required />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="email">// E-mail</label>
+              <input class="form-input" type="email" id="email" name="email" placeholder="your@email.com" required />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="message">// Message</label>
+              <textarea class="form-input form-textarea" id="message" name="message" placeholder="Bonjour Massiatou, je voudrais..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <span class="btn-icon">&#128225;</span> Envoyer le message
+            </button>
+            <div id="form-status" class="form-status"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-inner">
+        <div class="footer-brand">RADJI Massiatou</div>
+        <p class="footer-text">
+          <span class="footer-code">// Conçu &amp; réalisé avec </span>
+          <span class="neon-text">passion</span>
+          <span class="footer-code"> + </span>
+          <span class="neon-green">code pur</span>
+        </p>
+        <p class="footer-copy">&copy; 2025 RADJI Massiatou. Tous droits réservés.</p>
+      </div>
+    </footer>
+
+    <script type="module" src="./src/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: portfolio-api
+    runtime: node
+    rootDir: backend
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: GMAIL_USER
+        value: radjimassiatou@gmail.com
+      - key: GMAIL_APP_PASSWORD
+        sync: false
+
+  - type: web
+    name: portfolio-frontend
+    runtime: static
+    rootDir: frontend
+    buildCommand: npm install && npm run build
+    staticPublishPath: dist
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
